@@ -1,0 +1,19 @@
+<div style="width: auto;  margin-left: auto; margin-right: auto; padding: 40px">
+  <div class='flex max-w-sm w-full justify-center bg-white shadow-md rounded-lg overflow-hidden mx-auto flex flex-col p-10'>
+  <h1 class="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl dark:text-black">Upload Files</h1>
+
+  <%= form_with url: translations_path, data: { turbo: false } do |form| %>
+
+  <%= form.label :txt_file, 'Translation file' %>
+  <%= form.file_field :txt_file, class:"block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" %>
+
+  <br>
+
+  <%= form.label :xml_file, 'XML file' %>
+
+  <%= form.file_field :xml_file, class:"block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" %>
+  <br>
+  <%= form.submit "Upload Files" %>
+  <% end %>
+  </div>
+</div>

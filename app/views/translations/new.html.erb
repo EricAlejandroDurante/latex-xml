@@ -1,0 +1,21 @@
+<div style="width: auto;  margin-left: 150px; margin-right: 150px; margin-top: 30px">
+  <div >
+  <h1 class="mb-2 text-5xl font-medium leading-tight text-primary font-extrabold">Bienvenido a Lifyx</h1>
+  <p>Lifyx es un software que permite la transformación de archivos en formato XML a formato latex, que posteriormente pueden descargados para ser editados o convertidos a PDF instantáneamente.</p>
+  </div>
+  <%= render "shared/translateOption" %>
+  <div>
+    <%= render "shared/errorMessage"%>
+  </div>
+  <div>
+    <h1 class="mt-10 mb-2 text-3xl font-medium leading-tight text-primary font-extrabold">Reglas:</h1>
+    <p>Es necesario tener en cuenta las siguientes consideraciones a la hora de utilizar la plataforma, para poder tener una traducción de la forma correcta:</p>
+    <div style="margin-left: 50px; margin-top: 10px; margin-bottom: 50px; margin-right: 20px;">
+    <ol class="list-decimal list-inside">
+      <li>Se necesita un documento en texto plano que contenga la traducción de los distintos tags XML necesarios para poder traducirlos correctamente a las etiquetas de Latex, en caso de cualquier error la plataforma le notificare el tipo de error que haya ocurrido durante la conversión</li>
+      <li>Se necesita que el archivo XML no contenga errores y estén bien parseados, en caso contrario no funcionara la conversión.</li>
+      <li>La descarga del archivo transformado a PDF se hará de forma automática</li>
+    </ol>
+    </div>
+  </div>
+</div>
